@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>西安旅游网</title>
+		<link rel="stylesheet" href="css/Mf/menu.css" type="text/css"/>
+		<link rel="stylesheet" href="css/indexS/gundong.css" type="text/css"/>
+		<link rel="stylesheet" href="css/indexS/footer.css" type="text/css" />
+		<link rel="stylesheet" href="css/indexS/Tu.css" type="text/css" />
+		<link rel="stylesheet" href="css/indexS/footTop.css" type="text/css" />
+	</head>
+	<body>
+		<div id="header">
+			<marquee>您好！欢迎访问西安旅游网</marquee>
+			<a class="floatPosition" href="CreateNew.html"><font>注册</font></a>&nbsp;&nbsp;&nbsp;
+			<a class="floatPosition" href="LogOn.html"><font>登陆</font></a>			
+		<div id="mian">
+		<div id="mainleft"><img alt="logo" src="img/logo.png"  width="100%" height="100px"/></div>
+		<div id="mainright">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="DiscoverXIan.html">家乡概括</a>
+					<ul>
+						<li><a href="BeautifulPIC.html">图片展示</a></li>
+						<li><a href="IntroduceXiAn.html">简介</a></li>
+						<li><a href="ShowVideo.html">视屏赏析</a></li>
+					</ul>
+				</li>
+				<li><a href="lswh.html">历史文化</a>
+					<ul>
+						<li><a href="lsjj.html">历史简介</a></li>
+						<li><a href="dlqy.html">地理区域</a></li>
+					</ul>
+				</li>
+				<li><a href="GonLue.html">旅游攻略</a>
+					<ul>
+						<li><a href="luxian.html">精品路线</a></li>
+						<li><a href="jiudian.html">酒店动态</a></li>
+					</ul>
+				</li>
+				<li><a href="TravelInformation.html">旅游景点</a>
+					<ul>
+						<li><a href="TravelTop.html">旅游头条</a></li>
+						<li><a href="TravelInformation.html">精品资讯</a></li>
+					</ul>
+				</li>
+				<li><a href="Zhidao.html">游玩指导</a>
+					<ul>
+						<li><a href="Chi.html">吃</a></li>
+						<li><a href="yu.html">娱</a></li>
+						<li><a href="you.html">游</a></li>
+					</ul>
+				</li>
+				<li><a href="lxsbz.html">旅行帮助</a>
+					<ul>
+						<li><a href="lygsjj.html">旅游公司简介</a></li>
+						<li><a href="xxzxzx.html">旅游信息咨询中心</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</div>
+
+<!--
+	作者：offline
+	时间：2019-01-03
+	描述：滚动
+-->
+ <div id="div1">
+          <div id="div4">
+            <div id="div2">
+                 <img src="img/YuanDan.jpg" alt="图片1" height="500px" width="900px"/>
+                 <img src="img/YanTaTu.jpg" alt="图片2" height="500px" width="900px"/>
+                 <img src="img/GunDong1.jpg" alt="图片3" height="500px" width="900px"/>
+                 <img src="img/GunDong2.jpg" alt="图片4" height="500px" width="900px"/>
+            </div>
+            <div id="div3"></div>
+         </div>
+</div>
+
+<script type="text/javascript">
+      window.onload=function(){
+            var v1=document.getElementById('div1');
+            var v2=document.getElementById('div2');
+            var v3=document.getElementById('div3');
+   
+            v3.innerHTML= v2.innerHTML;//将v2容器里面的图片插入到v3容器里面  使其空白区域被遮住。
+            function fun(){
+              if(v1.scrollLeft<=0){
+                 v1.scrollLeft=1000;
+             }else{
+                 v1.scrollLeft--;
+             }
+         }
+ 
+         var fun1=setInterval(fun,20);
+ 
+         v1.onmouseover = function() {//鼠标经过时  清除定时器  停止图片的滚动
+                 clearInterval(fun1)
+             };
+         v1.onmouseout = function() {//鼠标离开后  继续滚动图片
+                 fun1 = setInterval(fun, 20)
+             };
+     }
+ 
+</script>
+<!--
+	作者：offline
+	时间：2019-01-03
+	描述：滚动结束
+-->
+<div id="peitu">
+	<div id="Center-left">
+		<img src="img/peitu1.jpg" width= "100%" height="100%"/>
+	</div>
+	<div id="Center-right">
+		<br /><br />
+		<h1>古城西安</h1>
+		<br />
+		<h3>西安，陕西省会、十三朝古都。</h3>
+		<h3>中华文明和中华民族重要发祥地，</h3>
+		<h3>中国四大古都之一丝绸之路经</h3>
+		<h3>济带的经济、文化、商贸中心</h3>
+	</div>
+	<div id="Center-Down-left">
+		<br /><br /><br /><br />
+		<h1>丝绸之路</h1>
+		<br /><br />
+		<h3>一条具有历史意义的国际通道，促进了东西方文明的交流</h3>
+	</div>
+	<div id="Center-Down-right">
+		<img src="img/peitu2.jpg" width="100%" height="100%" />
+	</div>
+</div>
+	
+	
+	
+	<div id="footTop">
+		<div id="Three">
+	<div id="left">
+		<div id="left-top">
+			<img src="img/gucheng.jpg" width="100%" height="200px"/>
+		</div>
+		<div id="left-top-bottom">
+			<h2 align="center">古城底蕴&nbsp;&nbsp;&nbsp;&nbsp;名家辈出</h2>
+			<h4 align="center">中国诗歌发展的黄金时代，云蒸霞蔚，名家辈出，唐诗数量多达五万余首</h4>
+		</div>
+	</div>
+	<div id="center">
+		<div id="center-top">
+			<h2 align="center">高山仰止&nbsp;&nbsp;&nbsp;&nbsp;感恩秦岭</h2>
+		    <h4 align="center">从秦岭流淌而出的河流浇灌的中国十三个封建王朝，又承载着今天“南水北调”的使命，牵系着中国的未来</h4>
+		</div>
+		<div id="center-top-bottom">
+			<img src="img/chengqiang.jpg" width="100%" height="200px" />
+		</div>
+	</div>
+	
+	<div id="right">
+		<img src="img/he.jpg" width="100%" height="400px" />
+	</div>
+        </div>	
+	</div>
+	
+	
+	
+<div id="footer">
+    <div id="Three-bottom">
+    	<br /><br /><br /><br />
+    <table width="400"  align="center">
+    	<td><a href="index.html#header">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></td>
+    	 <td><a href="DiscoverXIan.html">家乡概况</a></td>
+    	        <td><a href="lswh.html">历史文化</a></td>
+    	        <td><a href="GonLue.html">旅游攻略</a></td>
+    	        <td><a href="TravelInformation.html">旅游景点</a></td>
+    </table>
+	<hr  size="0.01" color="aliceblue"/>
+	<p align="center">投诉资讯电话:123123123  地址:西安航空学院  邮编:000000</p>
+	<p align="center">Copyright&copy;西安航空学院咨询处. 备案号:陕ICP备13213213231号</p>
+	</div>
+</div>
+	</body>
+</html>

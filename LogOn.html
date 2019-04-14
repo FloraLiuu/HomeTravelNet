@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆_西安旅游资讯网</title>
+		<style>
+			table{background: aliceblue; min-height: 25px; line-height: 25px; text-align: center; border-collapse:collapse; height:200px;width:500px;margin:150px auto;border: 3px solid pink}
+			.input{margin: 50px 0px 0px 100px;}
+		</style>
+	</head>
+	<body>
+			<form  class="table" action="" name="myform">
+<table>
+<tr>
+<td>用户名：</td>
+<td><input type="text" id="user" /></td>
+</tr>
+<tr>
+<td>密  码：</td>
+<td><input type="text" id="password" /></td>
+</tr>
+<tr>
+<td>
+<input class="input" type="submit" value="提交" onclick=myfun_submit() />
+</td>
+<td>
+<input class="input" type="submit" value="注册" onclick=myfun_reset() />
+</td>
+</tr>
+</table>
+</form>
+<script type="text/javascript">
+function myfun_submit(){
+var user_val = document.getElementById("user").value;
+var password_val = document.getElementById("password").value;
+if(user_val==""){
+alert("用户名不能为空！！");
+}
+else if(password_val==""){
+alert("密码不能为空！！！");
+}
+else if(user_val!=null&&password_val!=null)
+{
+	window.open("index.html","_blank")
+}
+
+}
+function myfun_reset(){
+window.open("CreateNew.html","_blank")
+}
+</script>
+	</body>
+</html>
